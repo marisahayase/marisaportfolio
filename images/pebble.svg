@@ -1,0 +1,12 @@
+<svg id="Component_2_7" data-name="Component 2 – 7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="199.939" height="180.4" viewBox="0 0 199.939 180.4">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_6" data-name="Path 6" d="M0,0H199.939V-180.4H0Z" fill="#fcf0ea"/>
+    </clipPath>
+  </defs>
+  <g id="Group_8" data-name="Group 8" transform="translate(0 180.4)" clip-path="url(#clip-path)">
+    <g id="Group_7" data-name="Group 7" transform="translate(0 -133.545)">
+      <path id="Path_5" data-name="Path 5" d="M0,0S0,171,117,126,218.114,13.5,126-30C18-81,0,0,0,0" fill="#fcf0ea"/>
+    </g>
+  </g>
+</svg>

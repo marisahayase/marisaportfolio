@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    list-style: none;
+    letter-spacing: 0.25rem;
+    color: #eb634e;
+    font-weight: 700;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #eb634e;
+    font-size: 35px;
+    letter-spacing: 0.25rem;
+    position: absolute;
+    margin-left: 6rem;
+    margin-top: 6.5rem;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #eb634e;
+}
+
+.navContainer {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    padding: 8rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlistContainer li {
+    display: inline;
+    margin-left: 2rem;
+    color: #eb634e;
+}
+
+.navlistContainer li:hover {
+    transition: ease-in-out 0.5s;
+    color: #952615;
+}
+
+/* When I add this below it makes the hover go away?? lmao */
+
+.logoContainer {
+    background-image: url(./images/mlogo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10vw;
+    height: 10vh;
+}
+
+.patternContainer {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/pebble.svg), url(./images/squiggle.svg),
+        url(./images/darkerpink.svg);
+    background-repeat: no-repeat;
+    background-size: 8rem, 35rem, 20rem;
+    background-attachment: fixed;
+    background-position: left 4rem top 2rem, right -4rem top -7rem,
+        left -4rem bottom -7rem;
+    position: absolute;
+    z-index: -3;
+}
