@@ -14,7 +14,9 @@
     <main>
         <div class="patternContainer"></div>
         <section class="navContainer">
-            <h1>Marisa Hayase</h1>
+            <a href="index.html">
+                <h1>Marisa Hayase</h1>
+            </a>
             <div class="hamburgerMenu" id="hammy">
                 <div id="one" class="hamburgerLine"></div>
                 <div id="two" class="hamburgerLine"></div>
@@ -25,7 +27,6 @@
                         <li><a href="about.html">About</a></li>
                     </ul>
                 </nav>
-            </div>
             </div>
             <!-- <div class="navlistContainer">
                 <a href="./index.html">
@@ -69,7 +70,16 @@
             </div>
 
         </section>
+
     </main>
+
+    <footer class="footContainer">
+        <div class="footIcons">
+            <img src="images/insta.svg" />
+            <img src="images/linkedin.svg" />
+        </div>
+    </footer>
+
     <script type="text/javascript">
         document.getElementById("hammy").addEventListener('click', function () {
             if (this.classList.contains("on")) {
