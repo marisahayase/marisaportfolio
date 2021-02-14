@@ -225,7 +225,6 @@ nav a:focus {
 }
 
 .contentContainer {
-    position: absolute;
     padding-left: 1.75rem;
     padding-right: 1.75rem;
     display: flex;
