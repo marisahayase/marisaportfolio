@@ -4,11 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kalo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <main>
+        <div class="patternContainer"></div>
+        <section class="navContainer">
+            <a href="index.html">
+                <h1>Marisa Hayase</h1>
+            </a>
+            <div class="hamburgerMenu" id="hammy">
+                <div id="one" class="hamburgerLine"></div>
+                <div id="two" class="hamburgerLine"></div>
+                <div id="three" class="hamburgerLine"></div>
+                <nav class="overlay" id="overlayID">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
 
+        <section class="projectImage">
+
+        </section>
+
+    </main>
+    <script type="text/javascript">
+        document.getElementById("hammy").addEventListener('click', function () {
+            if (this.classList.contains("on")) {
+                this.classList.remove("on");
+                this.classList.add("off");
+            } else {
+                this.classList.remove("off");
+                this.classList.add("on");
+            }
+        });
+    </script>
 </body>
 
 </html>

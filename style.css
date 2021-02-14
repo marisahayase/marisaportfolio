@@ -56,6 +56,7 @@ p {
 .navContainer h1 {
     font-size: 15px;
     letter-spacing: 0.1rem;
+    transition: transform 2s ease-in;
 }
 
 .navlistContainer li {
@@ -197,19 +198,6 @@ nav a:focus {
     transition: 0.25s ease-in-out;
 }
 
-/*end hamburger menu */
-
-
-/*
-.logoContainer {
-    background-image: url(./images/mlogo.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 10vw;
-    height: 10vh;
-}
-*/
-
 .patternContainer {
     width: 100%;
     height: 100vh;
@@ -225,26 +213,14 @@ nav a:focus {
 }
 
 .contentContainer {
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
+    align-items: center;
     display: flex;
     width: 100%;
     flex-direction: column;
 }
 
-/* old styling for images .tileContainer {
-    height: 300px;
-    background-color: rgb(106, 106, 149);
-    margin-bottom: 5rem;
-    margin: 2rem;
-    align-items: center;
-    border-radius: 2rem;
-    justify-content: space-between;
-    text-align: center;
-}
-*/
-
 .projectCard {
+    width: 262px;
     text-align: center;
     background-color: white;
     border-radius: 1rem;
@@ -334,7 +310,6 @@ nav a:focus {
     display: flex;
     width: 100%;
     height: fit-content;
-
 }
 
 .footIcons {
@@ -345,18 +320,14 @@ nav a:focus {
     align-items: center;
     overflow: hidden;
     flex-direction: row;
-    margin: 2rem;
-    margin-bottom: 4rem;
+    padding: 2rem;
 }
 
 /*Testing Footer*/
 footer {
     width: 100%;
-    padding: 1rem;
-    background-color: red;
+    padding: 0.5rem;
 }
-
-/*end footer*/
 
 /*Media Queries*/
 /* Larger than tablet (also point when grid becomes active) */
@@ -367,20 +338,45 @@ footer {
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+
+    .navContainer h1 {
+        transform: translateX(8rem) translateY(.6rem) scale(2);
+    }
+
     .contentContainer {
         flex-direction: row;
-        padding-left: 8rem;
-        padding-right: 8rem;
+        justify-content: space-between;
+        margin-top: 2rem;
+        height: 60vh;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 
     .patternContainer {
-        background-position: left 4rem top 2rem, right -4rem top -7rem,
-            left -4rem bottom -7rem;
+        background-position: left 4rem top 2rem, right -4rem top -7rem, left -4rem bottom -7rem;
+    }
+
+    .footContainer {
+        margin-left: auto;
+        width: 30vw;
+    }
+
+    .hamburgerMenu.on .overlay {
+        width: 50%;
     }
 }
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+    .projectCard {
+        width: 320px;
+    }
+
+    .imageCrop {
+        height: 320px;
+    }
+}
 
 /* For TV Screens & Projectors */
 @media (min-width: 2000px) {}
