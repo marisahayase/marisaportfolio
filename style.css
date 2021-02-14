@@ -350,6 +350,13 @@ nav a:focus {
     margin-bottom: 4rem;
 }
 
+/*Testing Footer*/
+footer {
+    width: 100%;
+    padding: 1rem;
+    background-color: red;
+}
+
 /*end footer*/
 
 /*Media Queries*/
