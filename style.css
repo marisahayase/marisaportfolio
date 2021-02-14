@@ -320,6 +320,10 @@ nav a:focus {
     padding: 2rem;
 }
 
+.footIcons a {
+    cursor: pointer;
+}
+
 /*Testing Footer*/
 footer {
     width: 100%;
