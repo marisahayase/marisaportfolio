@@ -52,7 +52,6 @@ p {
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    /*FIX DIS SHET*/
 }
 
 .navContainer h1 {
@@ -329,6 +328,46 @@ footer {
     width: 100%;
     padding: 0.5rem;
 }
+
+/*Project page styling*/
+.projectContent {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.projectBio p {
+    display: flex;
+    width: 15rem;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.projectImage {
+    width: 250px;
+    height: 250px;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    text-align: left;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #eb634e;
+}
+
+
 
 /*Media Queries*/
 /* Larger than tablet (also point when grid becomes active) */

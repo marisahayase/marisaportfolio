@@ -4,11 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UX Persona Cards</title>
+    <link rel="icon" href="images/icon.svg" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
+    <div class="patternContainer"></div>
+    <section class="navContainer">
+        <a href="index.html">
+            <h1>Marisa Hayase</h1>
+        </a>
+        <div class="hamburgerMenu" id="hammy">
+            <div id="one" class="hamburgerLine"></div>
+            <div id="two" class="hamburgerLine"></div>
+            <div id="three" class="hamburgerLine"></div>
+            <nav class="overlay" id="overlayID">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <main>
+        <section class="projectContent">
+            <img class="projectImage" src="images/portfolioimgs/pftp2-optimized.jpg" />
+            <img class="projectImage" src="images/portfolioimgs/pftp1-optimized.jpg" />
+            <h3 class="projectTitle">
+                Print for the People
+            </h3>
+            <div class="projectBio">
+                <p>
+                    Originally a trio of postcards, Print for the People is a series created to promote a community
+                    event hosted by Portland’s IPRC. The event is targeting young or inexperienced creators interested
+                    in an introduction to independent publishing and print techniques. The event promotional poster and
+                    the sketchbooks feature printing tools such as brayers, ink tubes, and squeegees to give context to
+                    the theme of the event.
+                </p>
+            </div>
+        </section>
+        <footer class="footContainer">
+            <div class="footIcons">
+                <a href="https://www.instagram.com/queennoob" target="_blank"> <img src="images/insta.svg" /></a>
+                <a href="https://www.linkedin.com/in/marisahayase/" target="_blank"> <img
+                        src="images/linkedin.svg" /></a>
+            </div>
+        </footer>
+    </main>
+    <script type="text/javascript">
+        document.getElementById("hammy").addEventListener('click', function () {
+            if (this.classList.contains("on")) {
+                this.classList.remove("on");
+                this.classList.add("off");
+            } else {
+                this.classList.remove("off");
+                this.classList.add("on");
+            }
+        });
+    </script>
 </body>
 
 </html>
