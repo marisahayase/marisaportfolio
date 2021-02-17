@@ -299,6 +299,10 @@ nav a:focus {
     width: 100px;
 }
 
+.footIcons p {
+    visibility: hidden;
+}
+
 /*end about page*/
 
 /*footer below*/
@@ -359,12 +363,16 @@ footer {
 }
 
 h3 {
-    text-align: left;
-    margin-left: 2.5rem;
+    text-align: center;
     margin-top: 1rem;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     color: #eb634e;
+    width: 100%;
+}
+
+.projectTitle {
+    margin: 0 auto;
 }
 
 
@@ -437,6 +445,37 @@ h3 {
         justify-content: center;
     }
 
+    .helloContainer {
+        visibility: hidden;
+    }
+
+    .footIcons p {
+        visibility: visible;
+    }
+
+    /*Project Pages*/
+    .projectContent {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 4rem;
+        height: 60vh;
+        padding-left: 2rem;
+        padding-right: 5rem;
+        border-radius: 0.5rem;
+    }
+
+    .projectImage {
+        width: 20vw;
+        height: 438px;
+        flex: 20%;
+        margin: 1rem;
+        border-radius: 0.5rem;
+    }
+
+    .projectCopy {
+        flex-direction: column;
+        margin: 4rem;
+    }
 }
 
 /* Larger than Desktop HD */
@@ -449,7 +488,13 @@ h3 {
     .imageCrop {
         height: 320px;
     }
-}
 
-/* For TV Screens & Projectors */
-@media (min-width: 2000px) {}
+    .projectImage {
+        width: 20vw;
+        height: 438px;
+    }
+
+    /* For TV Screens & Projectors */
+    @media (min-width: 2000px) {}
+
+}
